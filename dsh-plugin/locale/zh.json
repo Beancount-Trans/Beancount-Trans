@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Beancount-Trans 账本",
+    "description": "连接 Beancount-Trans 账本 MCP 服务，并增加一个带月度复盘、洞察复盘与账本概览技能的账本分析预设。"
+  }
+}

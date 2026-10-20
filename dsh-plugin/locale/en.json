@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Beancount-Trans Ledger",
+    "description": "Connects the Beancount-Trans ledger MCP server and adds a ledger-analysis agent preset with monthly-review, insight-review and ledger-overview skills."
+  }
+}

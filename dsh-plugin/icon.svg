@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Beancount-Trans ledger">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#12324f"/>
+  <path d="M16 20c6-3 12-3 16 0v26c-4-3-10-3-16 0z" fill="#f6f1e4"/>
+  <path d="M48 20c-6-3-12-3-16 0v26c4-3 10-3 16 0z" fill="#e9e2d0"/>
+  <path d="M32 20v26" stroke="#c9bfa6" stroke-width="1.6"/>
+  <path d="M20 27h8M20 33h8M20 39h6" stroke="#9aa7b4" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M36 33l4 4 8-9" fill="none" stroke="#2fb39a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="45" cy="20" r="5" fill="#e8b04b"/>
+</svg>

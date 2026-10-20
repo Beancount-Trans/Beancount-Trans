@@ -1,0 +1,63 @@
+# Beancount-Trans 账本接入（DeepSeek Harness bundle）
+#
+# 安装：plugin_manager install_bundle target=<本目录绝对路径>
+# 令牌：启动 Harness 前设置 BCT_MCP_TOKEN；本文件不保存任何密钥。
+#
+# mcp-bct 使用宿主层注册，因此所有会话都能用 mcp__bct__* 工具与 ledger://* 资源；
+# preset-beancount 只负责账本分析会话的技能与工具组合。
+- insert:
+    - id: mcp-bct
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: bct
+        transport: streamable-http
+        url: https://trans.dhr2333.cn/mcp
+        headers:
+          Authorization: !!js '`Bearer ${process.env.BCT_MCP_TOKEN ?? ""}`'
+        toolCallTimeoutMs: 30000
+        failOnStartupError: false
+        reconnect:
+          enabled: true
+
+    - id: preset-beancount
+      name: '@deepseek-ai/dsh-agent-preset'
+      config:
+        id: beancount
+        order: 20
+        description: 'Beancount-Trans 账本分析：只读查询、月度复盘与消费洞察'
+        plugins:
+          - id: persona
+            name: '@deepseek-ai/dsh-persona'
+            config:
+              prefix: |
+                你是 Beancount-Trans 账本分析师，只基于 MCP 工具返回的真实数据回答。
+                涉及金额、余额、占比、排名或跨期对比时，先取数再回答；不得凭印象编造
+                账户、标签、金额或交易。收入与负债在复式记账中可能为负，向用户展示时
+                取绝对值并说明口径。
+          - id: skill-filesystem
+            name: '@deepseek-ai/dsh-skill-filesystem'
+            config:
+              includeDefaultRoots: false
+              customSkillDirs:
+                - !!js "process.getBuiltinModule('node:url').fileURLToPath(new URL('./skills/', baseUrl))"
+          - id: tool-skill
+            name: '@deepseek-ai/dsh-tool-skill'
+          - id: tool-fs
+            name: '@deepseek-ai/dsh-tool-fs'
+          - id: tool-present
+            name: '@deepseek-ai/dsh-tool-present'
+          - id: tool-ask-user
+            name: '@deepseek-ai/dsh-tool-ask-user'
+          - id: compaction
+            name: cordis:group
+            group: true
+            isolate:
+              compaction: true
+              toolResultPruner: true
+            config:
+              - id: compaction-basic
+                name: '@deepseek-ai/dsh-compaction-basic'
+              - id: tool-result-pruner
+                name: '@deepseek-ai/dsh-compaction-tool-result-pruner'
+                config:
+                  thresholdChars: 8192
