@@ -1,0 +1,9 @@
+# 账本面板（DeepSeek Harness bundle）
+#
+# 安装：plugin_manager install_bundle target=<本目录绝对路径>
+#
+# 该行只加载 Host 半区（空实现）；`package.json` 的 dsh.client 让 Web 端再加载
+# client.js，由它向 `main` 与 `sidebar.panellist` 两个槽位注册「账本」面板。
+- insert:
+    - id: beancount-trans-panel
+      name: beancount-trans-panel
