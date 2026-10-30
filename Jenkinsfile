@@ -11,7 +11,7 @@ pipeline {
     }
 
     environment {
-        GITHUB_REPO = 'dhr2333/Beancount-Trans'
+        GITHUB_REPO = 'Beancount-Trans/Beancount-Trans'
     }
 
     stages {

@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dhr2333/Beancount-Trans.git"
+    "url": "git+https://github.com/Beancount-Trans/Beancount-Trans.git"
   },
   "keywords": [],
   "author": "",
@@ -18,9 +18,9 @@
     "node": ">=18.0.0"
   },
   "bugs": {
-    "url": "https://github.com/dhr2333/Beancount-Trans/issues"
+    "url": "https://github.com/Beancount-Trans/Beancount-Trans/issues"
   },
-  "homepage": "https://github.com/dhr2333/Beancount-Trans#readme",
+  "homepage": "https://github.com/Beancount-Trans/Beancount-Trans#readme",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.1",

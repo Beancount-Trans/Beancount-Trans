@@ -1,6 +1,6 @@
 # Beancount-Trans for DeepSeek Harness
 
-把 [Beancount-Trans](https://github.com/dhr2333/Beancount-Trans) 的只读账本 MCP 服务接入 DeepSeek Harness，并提供一个只做账本分析的 Agent 预设。
+把 [Beancount-Trans](https://github.com/Beancount-Trans/Beancount-Trans) 的只读账本 MCP 服务接入 DeepSeek Harness，并提供一个只做账本分析的 Agent 预设。
 
 ## 安装
 

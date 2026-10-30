@@ -33,7 +33,7 @@
 项目拉取并运行：
 
 ```shell
-git clone https://github.com/dhr2333/Beancount-Trans.git
+git clone https://github.com/Beancount-Trans/Beancount-Trans.git
 cd Beancount-Trans
 git submodule update --init Beancount-Trans-Backend
 git clone https://huggingface.co/google-bert/bert-base-chinese ./Beancount-Trans-Backend/pretrained_models/bert-base-chinese
@@ -49,5 +49,5 @@ docker compose up -d
 
 ## 问题反馈与支持
 
-- 报告问题（注意如果要上传账单请抹除隐私信息）：[GitHub Issues](https://github.com/dhr2333/Beancount-Trans/issues)
-- 讨论：[GitHub Discussions](https://github.com/dhr2333/Beancount-Trans/discussions)
+- 报告问题（注意如果要上传账单请抹除隐私信息）：[GitHub Issues](https://github.com/Beancount-Trans/Beancount-Trans/issues)
+- 讨论：[GitHub Discussions](https://github.com/Beancount-Trans/Beancount-Trans/discussions)

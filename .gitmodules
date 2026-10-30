@@ -1,18 +1,22 @@
 [submodule "Beancount-Trans-Backend"]
 	path = Beancount-Trans-Backend
-	url = https://github.com/dhr2333/Beancount-Trans-Backend.git
+	url = https://github.com/Beancount-Trans/Beancount-Trans-Backend.git
 	branch = main
 [submodule "Beancount-Trans-Frontend"]
 	path = Beancount-Trans-Frontend
-	url = https://github.com/dhr2333/Beancount-Trans-Frontend.git
+	url = https://github.com/Beancount-Trans/Beancount-Trans-Frontend.git
 	branch = main
 [submodule "Beancount-Trans-Assets"]
 	path = Beancount-Trans-Assets
-	url = https://github.com/dhr2333/Beancount-Trans-Assets.git
+	url = https://github.com/Beancount-Trans/Beancount-Trans-Assets.git
 	branch = main
 [submodule "Beancount-Trans-Docs"]
 	path = Beancount-Trans-Docs
-	url = https://github.com/dhr2333/Beancount-Trans-Docs.git
+	url = https://github.com/Beancount-Trans/Beancount-Trans-Docs.git
 [submodule "Beancount-Trans-Mobile"]
 	path = Beancount-Trans-Mobile
-	url = https://github.com/dhr2333/Beancount-Trans-Mobile.git
+	url = https://github.com/Beancount-Trans/Beancount-Trans-Mobile.git
+[submodule "Beancount-Trans-Contracts"]
+	path = Beancount-Trans-Contracts
+	url = https://github.com/Beancount-Trans/Beancount-Trans-Contracts.git
+	branch = main
