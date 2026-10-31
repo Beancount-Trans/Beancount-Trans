@@ -1,6 +1,6 @@
 # Beancount-Trans
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
 [![Docker](https://img.shields.io/badge/docker-available-blue.svg)](https://www.docker.com/)
 [![Awesome Beancount](https://awesome.re/badge.svg)](https://awesome-beancount.com/#china)
 
@@ -51,3 +51,20 @@ docker compose up -d
 
 - 报告问题（注意如果要上传账单请抹除隐私信息）：[GitHub Issues](https://github.com/Beancount-Trans/Beancount-Trans/issues)
 - 讨论：[GitHub Discussions](https://github.com/Beancount-Trans/Beancount-Trans/discussions)
+
+## 许可证
+
+本项目为 open-core 结构，各仓库许可证如下：
+
+| 仓库 | 许可证 |
+| :--- | :--- |
+| Beancount-Trans（本仓，聚合与部署） | MIT |
+| Beancount-Trans-Backend（核心） | AGPL-3.0-or-later |
+| Beancount-Trans-Frontend | AGPL-3.0-or-later |
+| Beancount-Trans-Mobile（财见） | Apache-2.0 + 商标保留 |
+| Beancount-Trans-Contracts | Apache-2.0 |
+| Beancount-Trans-Docs | CC BY 4.0 |
+| Beancount-Trans-Assets | MIT |
+| Beancount-Trans-Cloud | 专有 |
+
+解析核心、账本与写盘、只读 API/MCP、自托管部署永久开源；托管运维、配额与计费、Agent 记忆与决策档案属于商业层，位于 Cloud 仓库。
